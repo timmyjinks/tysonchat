@@ -36,8 +36,6 @@ func connect(h *Hub, w http.ResponseWriter, r *http.Request) {
 	room.ConnectUser(user)
 	h.register <- user
 
-	fmt.Println(user.Username, user.room.Name, "connected")
-
 	go user.read()
 	go user.write()
 }

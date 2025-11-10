@@ -35,7 +35,6 @@ func (u *User) read() {
 		}
 		wsmsg := WSMessage{u.Username, msg.Text, time.Now().Format("2006-01-02 15:04")}
 		u.room.messages = append(u.room.messages, wsmsg)
-		fmt.Println(wsmsg)
 
 		html := fmt.Sprintf(
 			`<div hx-swap-oob="beforeend" id="chat_room"><p>%v %s: %s</p></div>`,
