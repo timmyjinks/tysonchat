@@ -1,7 +1,7 @@
 {{ define "content" }}
 <div
   hx-ext="ws"
-  ws-connect="/ws?username={{ .Username }}"
+  ws-connect="/ws?username={{ .Username }}&room={{ .Room }}"
   class="flex flex-col h-96"
 >
   <h2 class="text-lg font-semibold mb-3 text-center">
