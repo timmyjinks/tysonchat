@@ -1,0 +1,22 @@
+{
+  "name": "parcel-vanilla-starter",
+  "private": true,
+  "version": "0.0.0",
+  "source": "templates/*.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --dist-dir static --public-url /static"
+  },
+  "dependencies": {
+    "htmx.org": "^2.0.8"
+  },
+  "devDependencies": {
+    "@parcel/compressor-brotli": "^2.16.1",
+    "@parcel/compressor-gzip": "^2.16.1",
+    "@parcel/config-default": "^2.16.1",
+    "@tailwindcss/postcss": "^4.1.17",
+    "parcel": "^2.14.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17"
+  }
+}

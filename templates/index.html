@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>HTMX Chat</title>
+  <script type="module" src="index.js"></script>
+  <link href="./style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col items-center justify-center">
+  <div class="w-full max-w-md p-6 bg-gray-800 rounded-2xl shadow-lg">
+    {{ block "content" . }}{{ end }}
+  </div>
+</body>
+
+</html>
